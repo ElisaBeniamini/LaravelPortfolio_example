@@ -13,14 +13,22 @@ class PublicController extends Controller
         return view('homepage');
     }
 
+    public function chisono()
+    {
+        return view('chisono');
+    }
     public  function contatti()
     {
         return view('contatti');
     }
 
-
-    public function chisono()
+    public function send(Request $request)
     {
-        return view('chisono');
+        //  dd($request);
+        $request->validate([
+            'name' => 'required name',
+            'email' => 'required email',
+            'messaggio' => 'required|min:10'
+        ]);
     }
 }
