@@ -10,7 +10,6 @@
 
         <a href="{{ $route }}" class="btn btn-outline-primary mt-2">{{ $textbutton }}</a>
 
-
     </div>
     <div class="d-flex justify-content-center">
     </div>
